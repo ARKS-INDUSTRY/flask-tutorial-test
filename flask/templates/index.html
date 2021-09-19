@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!--  the link for sample real time chart https://medium.com/@data.corgi9/real-time-graph-using-flask-75f6696deb55 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Akasha Paritha</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body onload="update_values">
+    <div class="loader">
+        <img src="static/resources/jarvis.gif" alt="">
+    </div>
+    <h1>Akasha Pathika</h1>
+    <div class="left">
+        <div class="cam_pi">
+            <img src="#" />
+        </div>
+    </div>
+
+
+    <div class="right">
+        <div class="graph">
+            <canvas id="my_chart" width="115px" height="100px"></canvas>
+            <canvas id="chart" width="115px" height="100px"></canvas>
+        </div>
+        <div class="temperature">
+            <br>
+            <p>Temperature: </p>
+            <p1 id="temp"></p1>
+            <br>
+        </div>
+        <div class="controls">
+            <button onclick="left" id="left">Left</button>
+            <button onclick="forward" id="forward">Forward</button>
+            <button onclick="right" id="right">Right</button>
+            <button onclick="stop" id="stop">Stop</button>
+            <button onclick="collect" id="collect">Collect</button>
+            <button onclick="backward" id="backward">Backward</button>
+            <button onclick="load" id="load">load</button>
+        </div>
+    </div>
+
+
+    <script src="static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

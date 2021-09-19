@@ -1,0 +1,20 @@
+{
+  "files": {
+    "myproject/main.py": [
+      {
+        "id": "8c025faa-a801-4a5b-89d9-86c7bc651f75",
+        "line": 7,
+        "version": 0,
+        "index": 104
+      }
+    ],
+    "myproject/templates/index.html": [
+      {
+        "id": "11d568a0-50d4-4ce3-b006-dedc1eb594b2",
+        "line": 3,
+        "version": 1,
+        "index": 23
+      }
+    ]
+  }
+}
